@@ -1,31 +1,30 @@
-![MusicCode Banner](banner-placeholder.png)
+![MusiCode Banner](banner-placeholder.png)
 [![Apple Intelligence](https://img.shields.io/badge/Apple%20Intelligence-required-lightgrey.svg)]()
 [![Shortcuts](https://img.shields.io/badge/Shortcut-ready-green.svg)]()
 
+MusiCode is a project inspired by _Spotify Codes_, but without their limitations. It allows you to use any image, symbol, logo, or object as a visual code that opens a link. Choose your own visual, upload it to the repo, and MusiCode takes care of the rest.
 
-MusiCode è un progetto ispirato agli _Spotify Codes_, ma senza le loro limitazioni. Consente di usare qualsiasi immagine, simbolo, logo o oggetto come codice visivo per aprire un link. Scegli un tuo visual, caricalo nella repo e MusicCode farà il resto.
+## How it works
 
-## Come funziona
+MusiCode uses Apple Intelligence multimodal recognition.
 
-MusiCode utilizza il riconoscimento multimodale di Apple Intelligence.
+1. The shortcut downloads the reference image named img.jpeg from your GitHub repo.
+2. When you launch it, the camera opens and asks you to frame your visual code.
+3. The shortcut sends both the reference image and the newly taken photo to Apple’s cloud model.
+4. If the model detects a match, it opens the URL stored in url.txt.
+5. If not, it displays an error notification.
 
-1. Lo shortcut scarica dalla vostra repo GitHub l’immagine di riferimento chiamata img.jpeg.
-2. Quando lo avviate, apre la fotocamera e vi chiede di inquadrare il vostro codice visivo.
-3. Lo shortcut invia l’immagine di riferimento e la foto scattata al modello cloud di Apple Intelligence.
-4. Se il modello riconosce la corrispondenza, apre l’URL contenuto in url.txt.
-5. Se non la riconosce, mostra una notifica di errore.
+## [Supported Devices](https://www.apple.com/apple-intelligence/)
 
-## [Device supportati](https://www.apple.com/it/apple-intelligence/)
-
-| Dispositivo | Supporto |
-|-------------|----------|
+| Device | Supported |
+|--------|-----------|
 | iPhone 15 Pro | ✔️ |
 | iPhone 15 Pro Max | ✔️ |
 | iPhone 16 | ✔️ |
 | iPhone 16e | ✔️ |
 | iPhone 16 Plus | ✔️ |
 | iPhone 16 Pro | ✔️ |
-| iPhone 16 Pro Max  | ✔️ |
+| iPhone 16 Pro Max | ✔️ |
 | iPhone 17 | ✔️ |
 | iPhone Air | ✔️ |
 | iPhone 17 Pro | ✔️ |
@@ -34,32 +33,35 @@ MusiCode utilizza il riconoscimento multimodale di Apple Intelligence.
 | iPad Pro M1+ | ✔️ |
 | iPad Mini | ✔️ |
 
+## Can I change the model
 
-## Posso cambiare modello
+Yes.
 
-Sì.
+- Apple local model: works, but with lower accuracy.  
+- ChatGPT Vision: works, but has higher latency and depends on your subscription.  
+- Apple cloud model (recommended): best speed and accuracy.
 
-- Modello locale Apple: funziona, ma con accuratezza inferiore.
-- ChatGPT Vision: funziona, ma presenta più latenza e richiede un abbonamento compatibile.
-- Modello cloud Apple (consigliato): migliore combinazione di velocità e precisione.
+## How to use
 
-# Come si usa
+1. Fork this repo.  
+2. Replace img.jpeg with your own visual code. Do not rename the file. Get the RAW link.  
+3. Edit url.txt with the link you want to open. Get its RAW link as well.  
+4. Import the shortcut on your iPhone or iPad.  
+5. On first launch, enter the RAW URLs when prompted.  
+6. Your system is ready. Print or display your visual code anywhere.
 
-1. Fate il fork di questa repo.
-2. Sostituite il file img.jpeg con l’immagine che volete usare come codice visivo. Non cambiate il nome del file. Ottenete il link RAW del nuovo file.
-3. Modificate url.txt inserendo il link che desiderate aprire. Ottenete anche il RAW di questo file.
-4. Importate lo shortcut su iPhone o iPad.
-5. Avviatelo e, alla prima esecuzione, inserite gli URL RAW richiesti.
-6. Il sistema è pronto. Potete stampare o mostrare il vostro codice visivo dove desiderate.
+## Shortcut Link
+[DOWNLOAD THE SHORTCUT](https://www.icloud.com/shortcuts/5de9e2422b684d009879a23c52ff7a20)
 
-## A cosa serve
+## What you can use it for
 
-- Aprire playlist o contenuti musicali
-- Creare biglietti da visita digitali
-- Collegare oggetti fisici a link online
-- Esperienze interattive, giochi, treasure hunt
-- Branding, merchandising e installazioni creative
+- Opening playlists or music content  
+- Creating digital business cards  
+- Linking physical objects to online content  
+- Interactive experiences, puzzles, treasure hunts  
+- Branding, merchandising and creative installations  
 
-## Licenza
-Non è possibile copiare questo progetto e dichiarare di averlo creato senza averlo modificato in modo sostanziale.  
-In ogni caso sono richiesti i crediti al autore originale.
+## License
+
+You may not copy this project and claim authorship unless you have substantially modified it.  
+Credits to the original author are always required.
